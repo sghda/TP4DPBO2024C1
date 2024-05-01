@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>TITLE</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.php">TP4</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.php">Members</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="subs.php">Subscriptions</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="container my-4">
+    <h2>Member List</h2>
+    <table class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>NAME</th>
+        <th>EMAIL</th>
+        <th>PHONE</th>
+        <th>JOINING DATE</th>
+        <th>SUBS TYPE</th>
+        <th>STATUS</th>
+        <th>ACTIONS</th>
+      </tr>
+    </thead>
+    <tbody>
+      DATA_TABEL
+    </tbody>
+  </table>
+
+
+
+  <div class="card p-5 mr-3 mx-auto col-sm-6">
+    <h2 class="card-title">Add Member</h2>
+    <form action="index.php" method="POST">
+        <div class="form-row">
+            <div class="form-group row mb-2">
+                <label for="tnama" class="col-form-label col-sm-3">Nama</label>
+                <div class="col">
+                    <input type="text" class="form-control" id="tname" name="tname" required>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group row mb-2">
+                <label for="temail" class="col-form-label col-sm-3">Email</label>
+                <div class="col">
+                    <input type="text" class="form-control" name="temail" required>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group row mb-2">
+                <label for="tphone" class="col-form-label col-sm-3">Phone</label>
+                <div class="col">
+                    <input type="text" class="form-control" name="tphone" required>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group row mb-2">
+                <label class="col-form-label col-sm-3" for="tsubs">Subcriptions</label>
+                <div class="col">
+                    <select class="custom-select form-control" name="cmbsubs">
+                        <option selected>Open this select menu</option>
+                        SUBSCRIPTIONS
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <button type="submit" name="add" class="btn btn-primary mt-3">Add</button>
+    </form>
+</div>
+
+
+  
+      </div>
+    
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
